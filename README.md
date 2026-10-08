@@ -1,6 +1,6 @@
 # HawkStack — research artifacts
 
-> **Public research companion to [`thornveil-ai/hawkstack`](https://github.com/thornveil-ai/hawkstack).** Compute-aware neural-architecture topology theory + the WEM perception backbone family. Six domains, 15 verified checkpoints, 38K-1.77M parameter range.
+> **Public research companion to [`thornveil-ai/hawkstack`](https://github.com/thornveil-ai/hawkstack).** Compute-aware neural-architecture topology theory + the WEM perception backbone family. Six domains plus a partial seventh (ECG), 15 verified checkpoints, 38K-1.77M parameter range.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0%20(docs)-blue)](LICENSE)
 [![Source](https://img.shields.io/badge/source-private%20(licensed)-red)](#get-source-access)
@@ -49,7 +49,9 @@ Verified at **38K - 1.77M parameters**. All numbers reproducible from the publis
 | PCB defects (DeepPCB) | ForgeHawk WEM | **84K** | **97.63% mAP** | SGDR, no pretrain | Our 1.5M WEM baseline 97.28% — **18x compression at par** |
 | Histopath (PanNuke) | CellHawk v9b | 923K | **0.6050 bPQ** | 10-cycle SGDR, no pretrain | CellViT-SAM-H 0.679 at 699M (**760x fewer params, -7.4 pp**) |
 | Thermal drone (AntiUAV-410) | ThermalHawk WEM | 1.13M-1.77M | 82.12-82.95% mAP | SGDR, no pretrain | Beats 60M+ trackers in reported benchmarks |
-| ECG arrhythmia (MIT-BIH N/S/V only) | NSV classifier | **8.9K** | 94.1/94.8/94.2% | AAMI subset, inter-patient | Huang et al. on S and V; F and Q classes remain open |
+| ECG arrhythmia, partial (MIT-BIH N/S/V only) | NSV classifier | **8.9K** | 94.1/94.8/94.2% | AAMI subset, inter-patient | Huang et al. on S and V; F and Q classes remain open |
+
+ECG is listed as a partial seventh domain and is not counted in the six: it covers 3 of the 5 AAMI classes.
 
 Smallest theory-derived model: **wempyr 39K → 66.6% IoU on NUDT-SIRST**.
 

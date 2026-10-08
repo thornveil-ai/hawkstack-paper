@@ -54,6 +54,7 @@ Unless a specific row in the headline table notes otherwise:
 
 ### ECG arrhythmia (MIT-BIH)
 
+- Partial domain; not counted in the six-domain headline
 - 3-class only: N (normal), S (supraventricular), V (ventricular)
 - AAMI subset, inter-patient split
 - F (fusion) and Q (unknown) classes explicitly excluded — theory does not yet cover these well
